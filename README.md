@@ -19,7 +19,12 @@ Try to reduce use of API calls to services that can otherwise calculate distance
 
 ## Alternatives:
 
-Use Euclidean distance to calculate the distance between two points, after having gathered all the points.
+1) Use Euclidean distance to calculate the distance between two points, after having gathered all the points.
+2) Use Google APIs to do the heavy lifting:
+- Maps API => $2/1000 calls or $7/1000 calls depending on features
+- Places API => $2.83/1000 calls + $5/1000 calls upwards of $17/1000 calls
+- Distance Matrix API => $5/1000 calls
+- Total: $10 ~ $29/1000 calls
 
 ## Potential Bonus Benefits:
 
